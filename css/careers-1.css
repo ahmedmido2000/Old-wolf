@@ -1,0 +1,203 @@
+:root {
+  --main-color: #fcdf5f;
+}
+body {
+  background-color: #141414;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.gold {
+  color: var(--main-color);
+}
+header {
+  background-image: url(../images/blue-and-white-modern-real-estate-poster-5@2x.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width:992px) {
+  header{
+      height: 80vh;
+  }
+}
+@media (max-width:825px) {
+  header{
+      height: 60vh;
+  }
+}
+@media (max-width:625px) {
+  header{
+      height: 50vh;
+  }
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.205);
+  display: block;
+}
+#brand {
+  width: 60px;
+}
+#nav-icon {
+  color: var(--main-color);
+}
+nav {
+  background-color: #0d0d0d;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+}
+nav ul li a:hover {
+  color: var(--main-color);
+}
+a.active {
+  border-bottom: dashed;
+  color: var(--main-color);
+}
+#btn {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+#btn:hover {
+  opacity: 0.8;
+}
+.search {
+  background-color: #0d0d0d;
+  color: #fff;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  width: 70%;
+  transform: translateX(-50%);
+}
+@media (max-width: 992px) {
+  .search {
+    width: 40%;
+  }
+}
+.search .search-icon {
+  background-color: var(--main-color);
+}
+.search .search-icon {
+  color: #0d0d0d;
+  font-size: 45px;
+}
+.contact-inputs input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: #141414;
+  color: #fff;
+}
+.contact-inputs textarea {
+  height: 200px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: #141414;
+  color: #fff;
+}
+.contact-inputs input[type="submit"] {
+  cursor: pointer;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.companies .product {
+  position: relative;
+  overflow: hidden;
+}
+.companies .product-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.companies .product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.companies .product-card {
+  flex: 0 0 auto;
+  width: 315px;
+  height: 325px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  background-color: #0d0d0d;
+  border-radius: 20px;
+}
+
+.companies .product-image {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 85px;
+  overflow: hidden;
+  padding: 10px;
+}
+.companies .product-info {
+  padding: 10px;
+}
+.companies .product-info input {
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.companies .product-card img {
+  transition: all 0.2s;
+  width: 60px;
+  height: 60px;
+}
+.companies .product-image i {
+  font-size: 45px;
+  color: #000;
+}
+.footer{
+    background-color: #0d0d0d;
+}
+.footer .icons i {
+  color: #fff;
+  font-size: 35px;
+  margin: 18px;
+  cursor: pointer;
+}
+.footer .enter-email input{
+  background-color: #1A1A1A;
+  border: none;
+  outline: none;
+  color: var(--main-color);
+}
+.footer .enter-email input::placeholder{
+  color: var(--main-color);
+}
+.footer .enter-email {
+  background-color: #1a1a1a;
+  color: var(--main-color);
+  border-radius: 5px 0 0 5px;
+}
+.footer .subscripe {
+  background-color: var(--main-color);
+  color: #0d0d0d;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}

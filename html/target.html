@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/target.css" />
+    <title>Old Wolf</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand" id="brand"
+          ><img
+            src="./images/logo.jpeg"
+            class="img-fluid"
+            alt=""
+            style="border-radius: 5px"
+        />
+      </a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle gold" id="y" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            <img src="./images/WhatsApp Image 2023-09-16 at 6.41.00 PM (1).jpeg" class="img-fluid m-1" style="width:40px ;height:40px" alt="">
+          </a>
+          <ul class="dropdown-menu" style="background-color:#141414 ;" aria-labelledby="x">
+            <li><a href="" class="gold"><img src="./images/WhatsApp Image 2023-09-16 at 6.41.00 PM (1).jpeg" class="img-fluid m-1" style="width:30px ;height:30px" alt=""></a></li>
+            <li><a href="" class="gold"><img src="./images/WhatsApp Image 2023-09-16 at 6.41.00 PM.jpeg" class="img-fluid m-1" style="width:30px ;height:30px" alt=""></a></li>
+          </ul>
+        </div>
+        <a href="#x" data-toggle="collapse" class="navbar-toggler">
+          <i class="fa-solid fa-bars navbar-toggler-icon" id="nav-icon"></i>
+        </a>
+        <div class="collapse navbar-collapse" id="x">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item p-1">
+              <a href="../index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="./html/random-search.html" class="nav-link">Property</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="./html/target.html" class="nav-link">Target</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="./html/gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="./html/contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="./html/careers-1.html" class="nav-link">Career 1</a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="./html/careers-2.html" class="nav-link">Career 2</a>
+            </li>
+          </ul>
+          <div class="btn pl-4 pr-4 p-2 ml-3" id="btn">
+            <i class="fa-solid fa-magnifying-glass mr-2"></i>Search
+          </div>
+        </div>
+      </nav>
+    </header>
+  <section class="search m-auto">
+    <div class="row m-auto">
+      <div class="col-lg-3 text-center p-1 pl-3 pr-3">
+        <p class="text-left">Location</p>
+        <div>
+          <select name="cars" id="cars" class="w-100 select">
+            <option value="volvo">Any</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-2 text-center p-1 pl-3 pr-3 border-left">
+        <p class="text-left">Region</p>
+        <div>
+          <select name="cars" id="cars" class="w-100 select">
+            <option value="volvo">Any</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-3 text-center p-1 pl-3 pr-3 border-left">
+        <p class="text-left">Property Type</p>
+        <div>
+          <select name="cars" id="cars" class="w-100 select">
+            <option value="volvo">Any</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-3 text-center p-1 pl-3 pr-3 border-left">
+        <p class="text-left">Property Status</p>
+        <div>
+          <select name="cars" id="cars" class="w-100 select">
+            <option value="volvo">Any</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-1 text-center search-icon p-1 border-left">
+        <i class="fa-solid fa-magnifying-glass mr-2"></i>
+      </div>
+    </div>
+  </section>
+  <section class="small-search container-fluid mt-5">
+    <div class="row">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-filter text-light col-2"
+        viewBox="0 0 16 16">
+        <path
+          d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+      </svg>
+      <div class="col-4 p-2 text-center buy hide-filter">Buy</div>
+      <div class="col-4 p-2 text-center rent hide-filter">Rent</div>
+    </div>
+    <div class="row hide-filter">
+      <div class="col-2 p-0"></div>
+      <div class="col-8 p-0">
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <select
+            name="cars"
+            id="cars"
+            class="w-100 select-small ml-4 mt-auto mb-auto p-2">
+            <option value="volvo">Location</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <i class="fa-solid fa-location-dot mr-4"></i>
+          <div></div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <select
+            name="cars"
+            id="cars"
+            class="w-100 select-small ml-4 mt-auto mb-auto p-2">
+            <option value="volvo">Region</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <i class="fa-solid fa-location-crosshairs mr-4"></i>
+          <div></div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <select
+            name="cars"
+            id="cars"
+            class="w-100 select-small ml-4 mt-auto mb-auto p-2">
+            <option value="volvo">Property type</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <i class="fa-solid fa-building-circle-check mr-4"></i>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="mt-5 mb-5">
+        <div class="container-fluid">
+          <h2 class="pt-5 most-searched text-center text-light mb-5 pb-3">
+            Congratulations, you found your target
+            <img src="../images/line-11.svg" style="width: 150px" alt="" />
+          </h2>
+          <div class="row gallery-2">
+            <div class="col-sm-6">
+                <img src="../images/50cb1bd86055120b16892a46193d69f6c3f6a6279282c1a9ba94511f-2@2x.png" class="img-fluid w-100 mb-4" style="height: 950px;border-radius:35px;" alt="">
+            </div>
+            <div class="col-sm-6">
+                <img src="../images/50cb1bd86055120b16892a46193d69f6c3f6a6279282c1a9ba94511f-3@2x.png" class="img-fluid w-100 mb-4" style="height: 462px;border-radius:35px;" alt="">
+                <img src="../images/50cb1bd86055120b16892a46193d69f6c3f6a6279282c1a9ba94511f-4@2x.png" class="img-fluid w-100" style="height: 462px;border-radius:35px;" alt="">
+            </div>
+            <div class="arrows">
+              <i class="fa-solid fa-angle-right" id="prev"></i>
+              <i class="fa-solid fa-angle-left"id="next"></i>
+          </div>
+          </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between mb-3">
+                <h4 class="gold ml-4">Over View</h4>
+                <p class="text-dark mr-4">Code#apart123</p>
+            </div>
+            <div class="attemps mt-4 mb-4">
+                <h6 class="gold mb-5 pl-4 pt-2">Apartments</h6>
+                <p class="text-light pl-3"><i class="fa-solid fa-location-dot mr-2 gold"></i>Alex, Egypt</p>
+                <div class="row font p-4">
+                    <div class="col p-1">
+                        <p class="text-light">3 <img src="../images/icon8.jpeg" class="img-fluid w-25" alt=""></p>
+                        <p class="text-light">BedRooms</p>
+                    </div>
+                    <div class="col p-1 border-left">
+                        <p class="text-light">2 <img src="../images/icon9.jpeg" class="img-fluid w-25" alt=""></p>
+                        <p class="text-light">Bathroom</p>
+                    </div>
+                    <div class="col p-1 border-left">
+                        <p class="text-light">1  <img src="../images/icon7.jpeg" class="img-fluid w-25" alt=""></p>
+                        <p class="text-light">Kitchen</p>
+                    </div>
+                    <div class="col p-1 border-left">
+                        <p class="text-light">2 <img src="../images/icon6.jpeg" class="img-fluid w-25" alt=""></p>
+                        <p class="text-light">Balcony</p>
+                    </div>
+                    <div class="col p-1 border-left">
+                        <p class="text-light">120m2 <img src="../images/icon10.jpeg" class="img-fluid w-25" alt=""></p>
+                        <p class="text-light">Area</p>
+                    </div>
+                </div>
+            </div>
+            <h4 class="gold ml-4">More Details</h4>
+            <p class="text-light mt-4 ml-4 details-description">Apartment in a prime location in Alex. The area of ​​the apartment is 120 meters. It contains 3 rooms, 2 bathrooms, and a balcony directly overlooking the Nile, and another balcony overlooking a garden.</p>
+            <div class="d-flex justify-content-around ml-auto mr-auto mt-5 mb-5 align-items-center p-2 text-center contact" >
+                <i class="fa-brands fa-whatsapp m-auto"></i>
+                <p class="m-auto pl-2 pr-2">Contact Us</p>
+                <a href="tel:01155170824" class=" m-auto text-dark"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="footer text-lg-left text-center mt-5 p-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <img
+              src="../images/logo.jpeg"
+              class="img-fluid w-lg-75"
+              alt="" style="border-radius:20px ;" />
+            <div class="d-flex justify-content-between ml-auto mr-auto icons mt-4 mb-4">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 text-light text-center m-auto">
+            <h4>WORKING HOURS</h4>
+            <p class="d-flex justify-content-between p-1 border-bottom">
+              <span> Saturday - Thursday</span>
+              <span>10 AM - 19 PM</span>
+            </p>
+            <p class="d-flex justify-content-between p-1 border-bottom">
+              <span>Friday</span>
+              <span>Closed</span>
+            </p>
+            <div class="text-left">
+              <p><i class="fa-solid fa-phone mr-2"></i>+20 0100 810 5192</p>
+              <p><i class="fa-solid fa-phone mr-2"></i>+971 154 444 9674</p>
+              <p>
+                <i class="fa-solid fa-blender-phone mr-2"></i>+2040 2222 057
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope-circle-check mr-2"></i
+                >info@oldwolf.ae
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot mr-2"></i>Business Bay ,
+                Dubai United Arab Emirates.
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot mr-2"></i>Al-Alshon Square,
+                El-Mahalla El-Kobra, Gharbia Governorate, Egypt
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-light text-center ml-lg-5">
+            <h4>Careers</h4>
+            <div class="border-bottom border-top p-1">
+              <p class="mb-2">Join Our Team</p>
+              <p class="m-0">HR@oldwolf.ae</p>
+            </div>
+            <h6 class="pt-4 pb-1 border-bottom">SUBSCRIBE NEWSLETTER</h6>
+            <div class="row m-1 mt-4">
+              <div class="col-8 p-2 enter-email"><input type="email" placeholder="Enter your email"></div>
+              <div class="col-4 p-2 subscripe">Subscripe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/gallery-target.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/popper.min.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/jquery-3.6.3.min.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+  </body>
+</html>
